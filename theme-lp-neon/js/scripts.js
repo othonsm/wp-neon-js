@@ -1,8 +1,9 @@
 const btnDropdown = document.querySelector('.js-btn-dropdown');
 const dropdown = document.querySelector('.js-dropdown');
 
-function openDropdown() {
+function openDropdown(event) {
+    event.preventDefault();
     console.log('ativar função');
 }
 
-btnDropdown.addEventListener('click', openDropdown);
+btnDropdown.firstElementChild('click', openDropdown);
