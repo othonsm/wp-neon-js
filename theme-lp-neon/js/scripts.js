@@ -3,7 +3,12 @@ const dropdown = document.querySelector('.js-dropdown');
 
 function openDropdown(event) {
     event.preventDefault();
-    console.log('ativar função');
+
+    dropdown.classList.toggle('active');
+
 }
 
-btnDropdown.firstElementChild('click', openDropdown);
+btnDropdown.addEventListener('click', openDropdown);
+
+btnDropdown.addEventListener('mouseleave', openDropdown);
+
